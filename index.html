@@ -7,17 +7,22 @@
   <title>Helbiz</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/my-framework.css">
+  <script src="https://kit.fontawesome.com/5f85cdecf3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+  <div id="menu-toggle"><i class="fas fa-bars fa-3x"></i></div>
+
+
   <!-- Main Header -->
-  <header class="main-header">
+  <header class="main-header col-xs-12 col-md-12 col-lg-12">
     <div class="navbar clearfix">
-      <div class="navbar-col-left float w-30">
+      <div class="col-xs-4 col-md-4 col-lg-4">
         <img class="img-logo" src="img/helbiz-logo.svg" alt="Helbiz">
       </div>
-      <div class="navbar-col-right float w-70">
+      <div class="col-xs-8 col-md-8 col-lg-8">
         <ul class="menu-nav">
           <li>
             <a href="#">HelbizGo</a>
@@ -69,7 +74,7 @@
 
     <!-- Sezione prodotti -->
     <section id="products" class="container clearfix">
-      <div class="float w-50">
+      <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="box">
           <h2>HelbizGo</h2>
           <h4>Next generation of electric city bikes.</h4>
@@ -77,11 +82,11 @@
           <img src="img/go-segway.jpg" alt="Helbiz Go">
         </div>
       </div>
-      <div class="float w-50">
+      <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="box">
           <h2>HelbizBike</h2>
           <h4>Seamless E-Scooter sharing globally.</h4>
-          <span class="cta">Coming Soon</span>
+          <a class="cta">Coming Soon </a>
           <img src="img/bike.jpg" alt="Helbiz Bike">
         </div>
       </div>
@@ -91,19 +96,43 @@
     <section id="how-works">
       <div class="how-works-bg"></div>
       <div class="contents container clearfix relative">
-        <div class="col-sx w-33 float">
+        <div class="col-sx col-xs-12 col-md-4 col-lg-4">
           <h3>How does Helbiz work?</h3>
         </div>
-        <div class="w-33 float">
+        <div class="col-xs-12 col-md-4 col-lg-4">
           &nbsp;
           <img class="img-phone" src="img/iphone.png" alt="Iphone">
         </div>
-        <div class="col-dx w-33 float">
+        <div class="col-dx col-xs-12 col-md-4 col-lg-4">
           <h4>Step 1</h4>
           <div class="text">Leave curbside when finished</div>
         </div>
       </div>
     </section>
+
+    <!-- sezione smart -->
+    <section id="smart" class="container clearfix">
+          <div class="col-xs-12 col-md-6 col-lg-6 offset-md-6 offset-lg-6 relative h-400">
+            <div class="position-center">
+            <h3>Smart mobility <br>on two wheels</h3>
+            <h4>A cleaner and more convenient alternative to get around your city</h4>
+            <a class="cta">Learn more</a>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- sezione download -->
+    <section id="download" class="container clearfix">
+
+      <div class="col-xs-12 col-md-6 col-lg-6" id="get-app">ciao</div>
+      <div class="col-xs-12 col-md-6 col-lg-6" id="find-us">ciao</div>
+
+
+    </section>
+
+
+
   </main>
 
 </body>

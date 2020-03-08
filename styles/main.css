@@ -1,9 +1,4 @@
 /* GENERAL STYLES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -42,6 +37,10 @@ body {
   width: 50%;
 }
 
+.h-400 {
+  height: 400px;
+}
+
 .w-70 {
   width: 70%;
 }
@@ -57,11 +56,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.position-center-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* HEADER */
-.main-header {
-  background: lightblue;
-}
 
 .navbar {
   width: 1070px;
@@ -138,8 +141,9 @@ body {
   color: blue;
 }
 
-#products .box a::after {
-  content: '\003e';
+#products .box a::after,
+#smart a::after {
+  content: '\276F';
   display: inline-block;
   margin-left: 10px;
 }
@@ -152,9 +156,11 @@ body {
   margin-bottom: 21px;
   font-size: 38px;
 }
-#products .box h4 {
+#products .box h4,
+#smart h4 {
   margin-bottom: 24px;
   font-size: 18px;
+  font-weight: 100;
 }
 
 #products .box img {
@@ -184,11 +190,11 @@ body {
   padding-top: 120px;
 }
 
-#how-works .col-sx {
+#how-works . {
   text-align: right;
 }
 
-#how-works .col-sx h3 {
+#how-works . h3 {
   font-weight: 600;
   font-size: 30px;
   width: 190px;
@@ -202,4 +208,86 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 380px;
+}
+
+
+/* smart */
+
+#smart {
+  background: red;
+  height: 400px;
+  text-align: center;
+  background: url('../img/ScooterHelbiz-2400.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  vertical-align: middle;
+}
+
+#smart h3 {
+  font-size: 36px;
+}
+
+/* download */
+#download #get-app {
+  background: #384959;
+}
+
+.fa-bars {
+  color: #000;
+}
+@media all and (max-width:768px) {
+  .how-works-bg {
+    background-position: 20%;
+  }
+
+  #how-works .img-phone {
+    bottom: 60%;
+    width: 300px;
+  }
+
+  #how-works .col-dx {
+    padding-top: 10px;
+}
+
+#menu-toggle {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+.img-logo {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 2;
+}
+
+.main-header {
+  height: 70px;
+  top: 0px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.menu-nav {
+  display: none;
+}
+
+#smart {
+  background-position: 20% 0;
+}
+
+}
+
+
+@media all and (min-width:769px) {
+  #menu-toggle
+  {
+    display: none;
+  }
 }
